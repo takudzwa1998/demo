@@ -1,0 +1,23 @@
+2019-02-11 09:24:06,798 - softwarecenter.ui.gtk3.app - INFO - setting up proxy 'None'
+2019-02-11 09:24:06,840 - softwarecenter.db.database - INFO - open() database: path=None use_axi=True use_agent=True
+2019-02-11 09:24:06,866 - softwarecenter.db.database - ERROR - failed to add apt-xapian-index
+Traceback (most recent call last):
+  File "/usr/share/software-center/softwarecenter/db/database.py", line 179, in _get_new_xapiandb
+    softwarecenter.paths.APT_XAPIAN_INDEX_DB_PATH)
+  File "/usr/lib/python2.7/dist-packages/xapian/__init__.py", line 3666, in __init__
+    _xapian.Database_swiginit(self,_xapian.new_Database(*args))
+DatabaseOpeningError: Couldn't stat '/var/lib/apt-xapian-index/index' (No such file or directory)
+2019-02-11 09:24:07,978 - softwarecenter.backend.reviews - WARNING - Could not get usefulness from server, no username in config file
+2019-02-11 09:24:09,761 - softwarecenter.backend.spawn_helper - WARNING - exit code 1 from helper for '['/usr/share/software-center/piston_generic_helper.py', '--datadir', '/usr/share/software-center/', 'RatingsAndReviewsAPI', 'review_stats']'
+2019-02-11 09:24:09,762 - softwarecenter.backend.spawn_helper - WARNING - got error from helper: 'WARNING:__main__:Unable to find the server at reviews.ubuntu.com
+'
+2019-02-11 09:24:13,629 - softwarecenter.db.categories - WARNING - sort by cataloged time requested but your a-x-i does not seem to support that yet
+2019-02-11 09:24:14,523 - softwarecenter.db.categories - WARNING - sort by cataloged time requested but your a-x-i does not seem to support that yet
+2019-02-11 09:24:14,675 - softwarecenter.db.categories - WARNING - sort by cataloged time requested but your a-x-i does not seem to support that yet
+2019-02-11 09:24:14,728 - softwarecenter.db.categories - WARNING - sort by cataloged time requested but your a-x-i does not seem to support that yet
+2019-02-11 09:24:14,790 - softwarecenter.db.categories - WARNING - sort by cataloged time requested but your a-x-i does not seem to support that yet
+2019-02-11 09:24:15,735 - softwarecenter.db.categories - WARNING - sort by cataloged time requested but your a-x-i does not seem to support that yet
+2019-02-11 09:24:15,790 - softwarecenter.db.categories - WARNING - sort by cataloged time requested but your a-x-i does not seem to support that yet
+2019-02-11 09:24:15,856 - softwarecenter.backend.spawn_helper - WARNING - exit code 1 from helper for '['/usr/share/software-center/piston_generic_helper.py', '--datadir', '/usr/share/software-center/', 'SoftwareCenterAgentAPI', 'exhibits', '{"lang": "en", "series": "precise"}']'
+2019-02-11 09:24:15,857 - softwarecenter.backend.spawn_helper - WARNING - got error from helper: 'WARNING:__main__:Unable to find the server at software-center.ubuntu.com
+'
